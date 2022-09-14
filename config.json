@@ -1,0 +1,11 @@
+{
+  "port": "8080",
+  "magic-token-header": "Magic-Header",
+  "magic-token": "XXX",
+  "commands": [
+    "cd /home/jan/IdeaProjects/ppl-report-generator",
+    "git pull",
+    "npm install",
+    "npm run build"
+  ]
+}
