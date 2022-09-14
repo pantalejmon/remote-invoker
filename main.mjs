@@ -27,7 +27,7 @@ function handleRequest(request, response, config) {
     if (!request.headers[config['magic-token-header'].toLowerCase()]
         || request.headers[config['magic-token-header'].toLowerCase()] !== config['magic-token']
         || request.method !== 'PATCH'
-        || request.url !== '/') {
+        || request.url !== config.endpoint) {
         response.statusCode = 418;
         response.write('nope');
         response.end();
